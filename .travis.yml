@@ -8,6 +8,7 @@ script:
   - npm install wdio-spec-reporter
   - npm install wdio-mocha-framework
   - npm install wdio-sauce-service --save-dev
+  - npm install wdio-allure-reporter --save-dev
   - ./node_modules/.bin/wdio wdio.conf.js
 deploy:
   provider: pages
