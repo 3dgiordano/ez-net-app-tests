@@ -15,8 +15,6 @@ exports.config = {
         'custom-data':{release:"3dgiordano"},
         build:process.env.TRAVIS_JOB_NUMBER,
         appiumVersion: '1.6.5',
-        autoAcceptAlerts: true,
-        autoGrantPermissions: true,
         platformName: 'Android',
         platformVersion: '6.0',
         deviceName: 'Android Emulator',
@@ -28,7 +26,7 @@ exports.config = {
 
     protocol: 'http',
     
-    sync: false,
+    sync: true,
     coloredLogs: true,
     screenshotPath: './errorShots/',
     
@@ -63,10 +61,10 @@ exports.config = {
         //readyFileId: null,
 
         connectRetries: 3,
-        connectRetryTimeout: 6000,
+        connectRetryTimeout: 10000,
 
         downloadRetries: 3,
-        downloadRetryTimeout: 6000
+        downloadRetryTimeout: 10000
         
     },
     
