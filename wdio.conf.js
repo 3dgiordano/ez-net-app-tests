@@ -2,45 +2,14 @@ const path = require('path');
 const APP_PATH = 'sauce-storage:ez-net-app_debug.apk';
 
 exports.config = {
+    
+    
     specs: [
         path.join(__dirname, './test.js')
     ],
     exclude: [
     ],
     maxInstances: 1,
-    sync: true,
-    coloredLogs: true,
-    logLevel: 'verbose',
-    baseUrl: 'http://localhost',
-    waitforTimeout: 9999999,
-    connectionRetryTimeout: 90000,
-    connectionRetryCount: 3,
-    framework: 'mocha',
-    reporters: [
-      'spec','allure'
-    ],
-    reporterOptions: {
-        allure: {
-            outputDir: 'allure-report'
-        }
-    },
-    screenshotPath: './errorShots/',
-    mochaOpts: {
-        ui: 'bdd',
-        fullTrace: true,
-        timeout: 99999999
-    },
-    services: ['sauce'],
-    user: process.env.SAUCE_USERNAME,
-    key: process.env.SAUCE_ACCESS_KEY,
-    sauceConnect: true,
-    sauceConnectOpts: {
-        /*verbose: true,
-        verboseDebugging: true,
-        vv: true,
-        doctor: true,*/
-        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
-    },
     
     capabilities: [{
         name:"my super test X",
@@ -55,5 +24,43 @@ exports.config = {
         browserName: '',
         deviceOrientation: 'portrait',
         //clearSystemFiles: false
-    }]
-};
+    }],
+
+    
+    sync: true,
+    coloredLogs: true,
+    screenshotPath: './errorShots/',
+    
+    logLevel: 'verbose',
+    baseUrl: 'http://localhost',
+    waitforTimeout: 9999999,
+    connectionRetryTimeout: 90000,
+    connectionRetryCount: 3,
+    
+    framework: 'mocha',
+    mochaOpts: {
+        ui: 'bdd',
+        fullTrace: true,
+        timeout: 99999999
+    },
+    
+    services: ['sauce'],
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
+    sauceConnect: true,
+    sauceConnectOpts: {
+        /*verbose: true,
+        verboseDebugging: true,
+        vv: true,
+        doctor: true,*/
+        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
+    },
+    
+    reporters: ['spec', 'allure'],
+    reporterOptions: {
+      allure: {
+        outputDir: 'allure-report'
+      }
+    }
+    
+    };
