@@ -1,0 +1,11 @@
+sudo: required
+node_js: false
+script:
+  - nvm install v7.1
+  - node --version
+  - npm install webdriverio
+  - npm install wdio-junit-reporter
+  - npm install wdio-spec-reporter
+  - npm install wdio-mocha-framework
+  - npm install wdio-sauce-service --save-dev
+  - ./node_modules/.bin/wdio wdio.conf.js
