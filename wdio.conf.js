@@ -69,11 +69,14 @@ exports.config = {
         
     },
     
+    reporters: ['spec'],
+    
+    /*
     reporters: ['spec', 'allure'],
     reporterOptions: {
       allure: {
         outputDir: 'allure-report'
       }
-    }
+    }*/
     
     };
