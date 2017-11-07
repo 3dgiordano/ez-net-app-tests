@@ -48,10 +48,28 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
-    /*
+    
     sauceConnectOpts: {
-        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
-    },*/
+        doctor: true,
+        verbose: false,
+        verboseDebugging: false,
+        vv: false,
+
+        logger: console.log,
+        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+
+        // an optional suffix to be appended to the `readyFile` name.
+        // useful when running multiple tunnels on the same machine,
+        // such as in a continuous integration environment. (optional)
+        readyFileId: null,
+
+        connectRetries: 3,
+        connectRetryTimeout: 2000,
+
+        downloadRetries: 3,
+        downloadRetryTimeout: 2000
+        
+    },
     
     reporters: ['spec', 'allure'],
     reporterOptions: {
