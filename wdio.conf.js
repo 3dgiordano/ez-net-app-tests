@@ -26,8 +26,9 @@ exports.config = {
         //clearSystemFiles: false
     }],
 
+    protocol: 'http',
     
-    sync: true,
+    sync: false,
     coloredLogs: true,
     screenshotPath: './errorShots/',
     
