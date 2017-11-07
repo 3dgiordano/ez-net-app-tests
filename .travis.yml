@@ -11,13 +11,14 @@ script:
   - npm install wdio-allure-reporter --save-dev
   - npm install -g allure-commandline --save-dev
   - ./node_modules/.bin/wdio wdio.conf.js
-  - allure generate allure-results
   - ls -l
-  - ls ./allure-results
+  - allure generate allure-report
+  - ls -l
+  - ls ./allure-report
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: allure-results
+  local_dir: allure-report
   on:
     branch: master
