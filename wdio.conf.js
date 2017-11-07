@@ -17,12 +17,11 @@ exports.config = {
     connectionRetryCount: 3,
     framework: 'mocha',
     reporters: [
-      'allure',
-      'spec'
+      'spec','allure'
     ],
     reporterOptions: {
         allure: {
-            outputDir: 'allure-results'
+            outputDir: 'allure-report'
         }
     },
     screenshotPath: './errorShots/',
