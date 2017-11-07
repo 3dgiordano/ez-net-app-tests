@@ -9,7 +9,9 @@ script:
   - npm install wdio-mocha-framework
   - npm install wdio-sauce-service --save-dev
   - npm install wdio-allure-reporter --save-dev
+  - npm install -g allure-commandline --save-dev
   - ./node_modules/.bin/wdio wdio.conf.js
+  - allure generate allure-results
 deploy:
   provider: pages
   skip_cleanup: true
