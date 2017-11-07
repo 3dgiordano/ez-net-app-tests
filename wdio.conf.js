@@ -51,11 +51,7 @@ exports.config = {
     sauceConnect: true,
     
     sauceConnectOpts: {
-        doctor: false,
-        verbose: false,
-        verboseDebugging: false,
-        vv: false,
-
+        
         logger: console.log,
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
         
@@ -64,13 +60,13 @@ exports.config = {
         // an optional suffix to be appended to the `readyFile` name.
         // useful when running multiple tunnels on the same machine,
         // such as in a continuous integration environment. (optional)
-        readyFileId: null,
+        //readyFileId: null,
 
         connectRetries: 3,
-        connectRetryTimeout: 2000,
+        connectRetryTimeout: 6000,
 
         downloadRetries: 3,
-        downloadRetryTimeout: 2000
+        downloadRetryTimeout: 6000
         
     },
     
