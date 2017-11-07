@@ -10,6 +10,7 @@ script:
   - npm install wdio-sauce-service --save-dev
   - npm install wdio-allure-reporter --save-dev
   - npm install -g allure-commandline --save-dev
+  - dig saucelabs.com
   - ./node_modules/.bin/wdio wdio.conf.js
   - ls -l
   - allure generate allure-report
