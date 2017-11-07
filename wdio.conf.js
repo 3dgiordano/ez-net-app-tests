@@ -25,6 +25,7 @@ exports.config = {
     }],
 
     protocol: 'http',
+    port: (process.env.BUILD_NUMBER) ? 80:4447,
     
     sync: true,
     coloredLogs: true,
