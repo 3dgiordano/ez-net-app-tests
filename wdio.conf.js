@@ -51,7 +51,7 @@ exports.config = {
     sauceConnect: true,
     
     sauceConnectOpts: {
-        doctor: true,
+        doctor: false,
         verbose: false,
         verboseDebugging: false,
         vv: false,
