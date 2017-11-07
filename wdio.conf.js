@@ -24,8 +24,8 @@ exports.config = {
         //clearSystemFiles: false
     }],
 
-    protocol: 'http',
-    port: (process.env.BUILD_NUMBER) ? 80:4447,
+    //protocol: 'http',
+    //port: 80,
     
     sync: true,
     coloredLogs: true,
@@ -48,7 +48,7 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
-    
+    host: 'ondemand.saucelabs.com',
     sauceConnectOpts: {
         
         logger: console.log,
