@@ -2,8 +2,6 @@ const path = require('path');
 const APP_PATH = 'sauce-storage:ez-net-app_debug.apk';
 
 exports.config = {
-    
-    
     specs: [
         path.join(__dirname, './test.js')
     ],
@@ -17,6 +15,8 @@ exports.config = {
         'custom-data':{release:"3dgiordano"},
         build:process.env.TRAVIS_JOB_NUMBER,
         appiumVersion: '1.6.5',
+        autoAcceptAlerts: true,
+        autoGrantPermissions: true,
         platformName: 'Android',
         platformVersion: '6.0',
         deviceName: 'Android Emulator',
@@ -48,13 +48,10 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
+    /*
     sauceConnectOpts: {
-        /*verbose: true,
-        verboseDebugging: true,
-        vv: true,
-        doctor: true,*/
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
-    },
+    },*/
     
     reporters: ['spec', 'allure'],
     reporterOptions: {
