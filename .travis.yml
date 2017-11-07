@@ -12,6 +12,7 @@ script:
   - npm install -g allure-commandline --save-dev
   - ./node_modules/.bin/wdio wdio.conf.js
   - allure generate allure-results
+  - ls ./allure-results
 deploy:
   provider: pages
   skip_cleanup: true
