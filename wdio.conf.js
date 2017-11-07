@@ -59,13 +59,20 @@ exports.config = {
         // an optional suffix to be appended to the `readyFile` name.
         // useful when running multiple tunnels on the same machine,
         // such as in a continuous integration environment. (optional)
-        //readyFileId: null,
+        readyFileId: null,
 
         connectRetries: 3,
         connectRetryTimeout: 10000,
 
         downloadRetries: 3,
-        downloadRetryTimeout: 10000
+        downloadRetryTimeout: 10000,
+        
+        options: {
+            "command-timeout": 600,
+            "idle-timeout": 600,
+            "max-duration": 1800
+        },
+        
         
     },
     
