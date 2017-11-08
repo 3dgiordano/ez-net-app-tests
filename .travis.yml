@@ -5,10 +5,10 @@ node_js: false
 script:
   - nvm install v7.1
   #- node --version
-  - npm install webdriverio --save-dev
-  #- npm install wdio-junit-reporter --save-dev
-  - npm install wdio-spec-reporter --save-dev
-  - npm install wdio-mocha-framework --save-dev
+  - npm install webdriverio 
+  #- npm install wdio-junit-reporter 
+  - npm install wdio-spec-reporter 
+  - npm install wdio-mocha-framework 
   - npm install wdio-sauce-service --save-dev
   - npm install wdio-allure-reporter --save-dev
   - npm install -g allure-commandline --save-dev
