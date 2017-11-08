@@ -65,6 +65,7 @@ exports.config = {
         noRemoveCollidingTunnels:true,
         maxMissedAcks:60,
         //dns: '8.8.8.8',
+        vv:true,
         
         // an optional suffix to be appended to the `readyFile` name.
         // useful when running multiple tunnels on the same machine,
