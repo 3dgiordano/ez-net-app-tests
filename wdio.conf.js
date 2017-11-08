@@ -24,7 +24,7 @@ exports.config = {
         //clearSystemFiles: false
         appWaitDuration: 120000,
         //avdLaunchTimeout:240000,
-        avdReadyTimeout:240000,
+        //avdReadyTimeout:240000,
         newCommandTimeout:120,
         deviceReadyTimeout: 120,
         commandTimeout: 600,
