@@ -22,8 +22,8 @@ exports.config = {
         browserName: '',
         deviceOrientation: 'portrait',
         //clearSystemFiles: false
-        commandTimeout: 800,
-        idleTimeout: 800,
+        commandTimeout: 600,
+        idleTimeout: 600,
         maxDuration: 1800
     }],
 
