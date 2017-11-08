@@ -2,6 +2,8 @@ language: node_js
 sudo: required
 node_js:
   - "7.1"
+addons:
+  sauce_connect: true
 script:
   #- nvm install v7.1
   #- node --version
