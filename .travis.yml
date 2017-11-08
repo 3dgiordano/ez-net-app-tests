@@ -1,11 +1,9 @@
 language: node_js
 dist: precise
 sudo: false
-node_js:
-  - stable
-  - 7
+node_js: false
 script:
-  #- nvm install v7.1
+  - nvm install v7.1
   #- node --version
   - npm install webdriverio --save-dev
   #- npm install wdio-junit-reporter --save-dev
