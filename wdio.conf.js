@@ -58,7 +58,7 @@ exports.config = {
     sauceConnect: true,
     //host: 'ondemand.saucelabs.com',
     sauceConnectOpts: {
-        
+        verboseDebugging: true,
         logger: console.log,
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
         
