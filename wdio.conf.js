@@ -22,9 +22,9 @@ exports.config = {
         browserName: '',
         deviceOrientation: 'portrait',
         //clearSystemFiles: false
-        "command-timeout": 600,
-        "idle-timeout": 600,
-        "max-duration": 1800
+        commandTimeout: 800,
+        idleTimeout: 800,
+        maxDuration: 1800
     }],
 
     //protocol: 'http',
@@ -52,7 +52,7 @@ exports.config = {
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
     //host: 'ondemand.saucelabs.com',
-    /*sauceConnectOpts: {
+    sauceConnectOpts: {
         
         logger: console.log,
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
@@ -69,15 +69,15 @@ exports.config = {
 
         downloadRetries: 3,
         downloadRetryTimeout: 10000,
-        
+        /*
         options: {
             "command-timeout": 600,
             "idle-timeout": 600,
             "max-duration": 1800
-        },
+        },*/
         
         
-    },*/
+    },
     
     //reporters: ['spec'],
     
