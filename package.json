@@ -1,5 +1,6 @@
 {
   "name": "EZNetTests",
   "version": "0.0.1",
-  "description" : "EZNet Tests"
+  "description" : "EZNet Tests",
+  "private": true
 }
