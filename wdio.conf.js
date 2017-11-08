@@ -22,6 +22,9 @@ exports.config = {
         browserName: '',
         deviceOrientation: 'portrait',
         //clearSystemFiles: false
+        "command-timeout": 600,
+        "idle-timeout": 600,
+        "max-duration": 1800
     }],
 
     //protocol: 'http',
