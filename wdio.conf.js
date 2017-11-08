@@ -47,19 +47,19 @@ exports.config = {
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    sauceConnect: false,
-    host: 'ondemand.saucelabs.com',
+    sauceConnect: true,
+    //host: 'ondemand.saucelabs.com',
     sauceConnectOpts: {
         
         logger: console.log,
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
         
-        dns: '8.8.8.8',
+        //dns: '8.8.8.8',
         
         // an optional suffix to be appended to the `readyFile` name.
         // useful when running multiple tunnels on the same machine,
         // such as in a continuous integration environment. (optional)
-        readyFileId: null,
+        //readyFileId: null,
 
         connectRetries: 3,
         connectRetryTimeout: 10000,
@@ -76,7 +76,7 @@ exports.config = {
         
     },
     
-    reporters: ['spec'],
+    //reporters: ['spec'],
     
     /*
     reporters: ['spec', 'allure'],
