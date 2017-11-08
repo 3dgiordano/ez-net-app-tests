@@ -23,7 +23,6 @@ exports.config = {
         deviceOrientation: 'portrait',
         //clearSystemFiles: false
         deviceReadyTimeout: 60,
-        androidDeviceReadyTimeout: 60, 
         commandTimeout: 600,
         idleTimeout: 600,
         maxDuration: 1800
