@@ -29,7 +29,7 @@ exports.config = {
         deviceReadyTimeout: 120,
         commandTimeout: 600,
         idleTimeout: 600,
-        maxDuration: 1800
+        maxDuration: 10800
     }],
 
     //protocol: 'http',
