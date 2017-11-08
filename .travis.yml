@@ -1,17 +1,17 @@
 language: node_js
-dist: precise
-sudo: false
-node_js: false
+sudo: required
+node_js:
+  - "7.1"
 script:
-  - nvm install v7.1
+  #- nvm install v7.1
   #- node --version
   - npm install webdriverio 
   #- npm install wdio-junit-reporter 
   - npm install wdio-spec-reporter 
   - npm install wdio-mocha-framework 
-  - npm install wdio-sauce-service --save-dev
-  - npm install wdio-allure-reporter --save-dev
-  - npm install -g allure-commandline --save-dev
+  - npm install wdio-sauce-service 
+  - npm install wdio-allure-reporter 
+  - npm install -g allure-commandline 
   #- dig saucelabs.com
   - ./node_modules/.bin/wdio wdio.conf.js
   - ls -l
