@@ -32,8 +32,8 @@ exports.config = {
         maxDuration: 10800
     }],
 
-    //protocol: 'http',
-    //port: 80,
+    protocol: 'http',
+    port: 80,
     
     sync: true,
     coloredLogs: true,
@@ -55,8 +55,8 @@ exports.config = {
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    sauceConnect: true,
-    //host: 'ondemand.saucelabs.com',
+    sauceConnect: false,
+    host: 'ondemand.saucelabs.com',
     sauceConnectOpts: {
         verboseDebugging: true,
         logfile:"./sc.log",
