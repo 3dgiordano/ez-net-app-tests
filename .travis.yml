@@ -2,8 +2,8 @@ language: node_js
 sudo: required
 node_js:
   - "7.1"
-addons:
-  sauce_connect: false
+#addons:
+#  sauce_connect: false
 script:
   - "curl -X GET 'https://saucelabs.com/rest/v1/hello' -H 'X-RateLimit-Enable: true' -i"
   #- nvm install v7.1
