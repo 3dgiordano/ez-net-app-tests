@@ -65,10 +65,10 @@ exports.config = {
         //readyFileId: null,
 
         connectRetries: 3,
-        connectRetryTimeout: 10000,
+        connectRetryTimeout: 60000,
 
         downloadRetries: 3,
-        downloadRetryTimeout: 10000,
+        downloadRetryTimeout: 60000,
         /*
         options: {
             "command-timeout": 600,
