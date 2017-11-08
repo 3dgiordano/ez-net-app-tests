@@ -61,7 +61,7 @@ exports.config = {
         verboseDebugging: true,
         logfile:"./sc.log",
         logger: console.log,
-        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+        //tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
         noRemoveCollidingTunnels:true,
         maxMissedAcks:60,
         //dns: '8.8.8.8',
