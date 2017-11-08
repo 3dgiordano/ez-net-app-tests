@@ -49,7 +49,7 @@ exports.config = {
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: true,
     //host: 'ondemand.saucelabs.com',
-    sauceConnectOpts: {
+    /*sauceConnectOpts: {
         
         logger: console.log,
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
@@ -74,7 +74,7 @@ exports.config = {
         },
         
         
-    },
+    },*/
     
     //reporters: ['spec'],
     
